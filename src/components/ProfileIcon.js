@@ -1,11 +1,11 @@
 import '../styles/profileIcon.scss';
 
 function ProfileIcon(props) {
-    const { iconSize, storyBorder, image} = props;
+    const { iconSize, storyBorder, image } = props;
 
     function getRandomInt(min, max) {
         min = Math.ceil(min);
-        max = Math.ceil(max);
+        max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
